@@ -1,4 +1,4 @@
-# Github Repos App
+# Github Repo App
 ![Kotlin](https://img.shields.io/badge/language-kotlin-blue)
 ![Minimum SDK Version](https://img.shields.io/badge/minSDK-23-orange) 
 
