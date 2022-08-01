@@ -43,7 +43,7 @@ that repo from this page.
 ✅ [Jetpack Navigation component](https://developer.android.com/guide/navigation)     \
 ✅ [Retrofit](https://square.github.io/retrofit/)     \
 ✅ [Clean Architecture](https://www.raywenderlich.com/3595916-clean-architecture-tutorial-for-android-getting-started)     \
-✅ [Glide](https://github.com/bumptech/glide)     \
+✅ [Glide](https://github.com/bumptech/glide)
 
 ## Licence
 
