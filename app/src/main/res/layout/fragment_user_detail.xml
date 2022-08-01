@@ -35,7 +35,6 @@
                 android:scaleType="fitCenter" />
 
             <TextView
-                android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -44,7 +43,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -53,7 +51,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -62,7 +59,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFollowers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -71,7 +67,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFollowing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
