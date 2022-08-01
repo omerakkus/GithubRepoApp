@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="repoDetails"
+            type="com.github.repos.domain.model.RepoDetails" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivRepoDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="ContentDescription">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvRepoDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/ivRepoDetail"
+        android:text="@string/repo_name"/>
+
+        <TextView
+            android:id="@+id/tvRepoDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoDetailTitle"
+            android:text="@{repoDetails.repoName}"/>
+
+        <TextView
+            android:id="@+id/tvRepoOwnerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoDetailName"
+            android:text="@string/owner"/>
+
+        <TextView
+            android:id="@+id/tvRepoOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoOwnerTitle"
+            android:text="@{repoDetails.ownerName}"/>
+
+        <TextView
+            android:id="@+id/tvRepoForksTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoOwner"
+            android:text="@string/forks_count"/>
+
+        <TextView
+            android:id="@+id/tvRepoForks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoForksTitle"
+            android:text="@{Integer.toString(repoDetails.forksCount)}"/>
+
+        <TextView
+            android:id="@+id/tvRepoLanguageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoForks"
+            android:text="@string/language"/>
+
+        <TextView
+            android:id="@+id/tvRepoLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoLanguageTitle"
+            android:text="@{repoDetails.language}"/>
+
+        <TextView
+            android:id="@+id/tvRepoBranchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoLanguage"
+            android:text="@string/default_branch"/>
+
+        <TextView
+            android:id="@+id/tvRepoBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoBranchTitle"
+            android:text="@{repoDetails.default_branch}"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

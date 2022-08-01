@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentRepos">
+    <fragment
+        android:id="@+id/fragmentRepos"
+        android:name="com.github.repos.presentation.allrepos.FragmentRepos"
+        android:label="fragment_repos"
+        tools:layout="@layout/fragment_repos" >
+        <action
+            android:id="@+id/action_fragmentRepos_to_repositoryDetailFragment"
+            app:destination="@id/repositoryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryDetailFragment"
+        android:name="com.github.repos.presentation.repodetails.RepositoryDetailFragment"
+        android:label="fragment_repository_detail"
+        tools:layout="@layout/fragment_repository_detail" >
+        <action
+            android:id="@+id/action_repositoryDetailFragment_to_fragmentRepos"
+            app:destination="@id/fragmentRepos" />
+        <action
+            android:id="@+id/action_repositoryDetailFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.github.repos.presentation.user.UserDetailFragment"
+        android:label="fragment_user_detail"
+        tools:layout="@layout/fragment_user_detail" />
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GithubReposApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="repositories">Repositories</string>
+    <string name="repository_detail">Repository Detail</string>
+    <string name="user_detail">User Detail</string>
+    <string name="repo_name">Repo Name</string>
+    <string name="owner">Owner</string>
+    <string name="forks_count">Forks Count</string>
+    <string name="language">Language</string>
+    <string name="default_branch">Default Branch Name</string>
+    <string name="connection_error">An unexpected error. Please try again later.</string>
+</resources>
