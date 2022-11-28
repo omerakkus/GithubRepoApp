@@ -2,7 +2,7 @@
 ![Kotlin](https://img.shields.io/badge/language-kotlin-blue)
 ![Minimum SDK Version](https://img.shields.io/badge/minSDK-23-orange) 
 
-## Screenshots
+## Screenshot
 
 <table>
 <tr>
