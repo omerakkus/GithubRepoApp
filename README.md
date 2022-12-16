@@ -2,7 +2,7 @@
 ![Kotlin](https://img.shields.io/badge/language-kotlin-blue)
 ![Minimum SDK Version](https://img.shields.io/badge/minSDK-23-orange) 
 
-## Screenshot
+## Screenshots
 
 <table>
 <tr>
@@ -26,7 +26,7 @@
 
 </table>
 
-## 📔 Introduction
+## 📔 Introduction...
 
 Github Repo application consists of 3 screens. The first screen shows all repositories in Github. 
 Then, when the desired repository is clicked, the repository detail page opens, where you can find 
