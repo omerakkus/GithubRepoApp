@@ -1,5 +1,5 @@
 ## 1
-name: Merge Closed and Deploy Firebase
+name: PR Closed and Deploy Release version to Firebase
 
 ## Actions that will be executed when pull request is created
 on:
@@ -16,7 +16,7 @@ jobs:
         echo The PR was merged
 
 ## Release
-  buildRelease:
+  buildReleaseAndDeploy:
     runs-on: ubuntu-latest
     steps:
       # 1
