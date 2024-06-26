@@ -45,7 +45,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: app-release.apk
-          path: ${{steps.sign_app.outputs.signedReleaseFile}}
+          path: app/build/outputs/apk/release
       # 5
       - uses: actions/upload-artifact@master
         with:
@@ -58,7 +58,7 @@ jobs:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: release-test
-          file: ${{steps.sign_app.outputs.signedReleaseFile}}
+          file: app/build/outputs/apk/release
 
   # deploy_To_Firebase
   deploy-firebase:
