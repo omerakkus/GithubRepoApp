@@ -69,12 +69,12 @@ jobs:
       # 2
       - uses: actions/download-artifact@master
         with:
-          name: app-debug.apk
+          name: app-release.apk
       #3
       - name: upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
-          groups: debug-test
-          file: app-debug.apk
+          groups: release-test
+          file: app-release.apk
