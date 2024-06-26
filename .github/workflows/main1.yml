@@ -15,7 +15,7 @@ jobs:
     - run: |
         echo The PR was merged
 
-  # deploy_To_Firebase
+ # deploy_To_Firebase
   deploy-firebase:
     # 1
     needs: [ if_merged ]
