@@ -26,7 +26,7 @@
 
 </table>
 
-## 📔 Introduction
+## 📔 Introduction...
 
 Github Repo application consists of 3 screens. The first screen shows all repositories in Github. 
 Then, when the desired repository is clicked, the repository detail page opens, where you can find 
