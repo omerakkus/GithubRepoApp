@@ -1,5 +1,5 @@
 ## 1
-name: Build Debug Apk and Deploy
+name: Build Debug Apk
 
 ## Actions that will be executed when pull request is created
 on:
